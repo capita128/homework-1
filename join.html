@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>Become a Member - AAAE of Cal State LA</title>
+    <script>
+      function validateEmail(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+      }
+      function checkInputBox() {
+        var email = document.getElementById( '0xzz' ).value;
+        var style = document.getElementById( '0xzz' ).style; /* 'style' is an object of element with the id '0xbb' */
+        var valid = validateEmail( email );
+        /* upate border of s1 */
+        if (valid == true) {
+          style.border = "2px solid #00ff00";
+        } else {
+          style.border = "2px solid #ff0000";
+        }
+      }
+
+      function SelectAll(id)
+      {
+        document.getElementById(id).focus();
+        document.getElementById(id).select();
+      }
+    </script>
+  </head>
+  <table align="center" width="580px">
+    <tr>
+      <td>
+        <body link="#4d4d4d" vlink="#4d4d4d">
+          <p style="text-align:center;">
+            <a href="index.html">
+              <img src="logo.png" width="475" height="60">
+            </a>
+          </p>
+          <p style="font-family:arial; font-size:16px" font color="black" align="center">
+            <b><a href="index.html">HOME</a> | <a href="events.html">UPCOMING EVENTS</a> | <a href="join.html">BECOME A MEMBER</a> | <a href="gallery.html">PHOTO GALLERY</a></b>
+          </p>
+          <br />
+          <h1 style="font-family:arial; font-size:25px; color:#003366;" align="center">New Member Form</h1>
+          <p style="font-family:arial; font-size:16px; color:#4d4d4d;">Membership is free and all Cal State LA students are welcome to join. Once we have received your form, you will be added onto our weekly email blast and be notified of all upcoming student chapter activities.</p>
+          <p style="font-family:arial; font-size:16px"><font color="#990000"><i>* = Required Field</i></font></p>
+          <form action="http://server.com/submit/form" method="POST">
+
+            <p style="font-family:arial; color:#4d4d4d; font-size:14px; line-height:1.3">First Name*: <input type="text" name="FirstName" size="15" maxlength="30" required id="00xaa" onClick="SelectAll('00xaa');"/> &nbsp;&nbsp;&nbsp;&nbsp;
+               Last Name*: <input type="text" name="LastName" size="15" maxlength="30" required id="00xbb" onClick="SelectAll('00xbb');"/></p>
+            <p style="font-family:arial; color:#4d4d4d; font-size:14px; line-height:1.3">CIN #: <input type="number" name="CIN" size="9" maxlength="9" id="00xcc" onClick="SelectAll('00xcc');"/> &nbsp;&nbsp;&nbsp;&nbsp;
+
+               Email*: <input type="email" name="email" size="20" maxlength="30" required id="0xzz" style="" onkeyup="checkInputBox()"/></p>
+            <p style="font-family:arial; color:#4d4d4d; font-size:14px; line-height:1.3">Street Address: <input type="text" name="StreetAddress" size="30" maxlength="40" id="00xdd" onClick="SelectAll('00xdd');"/></p>
+            <p style="font-family:arial; color:#4d4d4d; font-size:14px; line-height:1.3">City: <input type="text" name="city" size="20" maxlength="30" id="00xee" onClick="SelectAll('00xee');"/> &nbsp;&nbsp;
+               State: <input type="text" name="state" size="2" maxlength="2"/> &nbsp;&nbsp;
+               Zip: <input type="text" name="zipcode" size="10" maxlength="10"/>
+            </p>
+            <p style="font-family:arial; color:#4d4d4d; font-size:14px; line-height:1.3">Phone Number*: <input type="text" name="phone" size="12" maxlength="12" required/> &nbsp;&nbsp;&nbsp;&nbsp;
+              Status:
+            <select name="status">
+              <option value="Choose">Choose One</option>
+              <option value="Freshman">Freshman</option>
+              <option value="Sophomore">Sophomore</option>
+              <option value="Junior">Junior</option>
+              <option value="Senior">Senior</option>
+            </select>
+            </p>
+            <p style="font-family:arial; color:#4d4d4d; font-size:14px; line-height:1.3">Preferred Contact Method(s): &nbsp;
+              <input type="checkbox" name="ContactMethod" value="email" />Email &nbsp;
+              <input type="checkbox" name="ContactMethod" value="phone" />Phone<br>
+            </p>
+            <p>
+              <button type="submit" value="Submit">Submit</button>
+              <button type="reset" value="Reset">Reset</button>
+            </p>
+
+          </form>
+          <p style="font-family:arial; font-size:13px" align="center">
+            <a href="index.html">Home</a> | <a href="events.html">Upcoming Events</a> | <a href="gallery.html">Photo Gallery</a><br /><br />
+            <font size="2">Copyright © 2017 by Paul Man. All rights reserved.</font>
+          </p>
+        </body>
+      </td>
+    </tr>
+  </table>
+</html>
